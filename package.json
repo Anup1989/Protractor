@@ -13,7 +13,10 @@
     "@types/node": "~11.13.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "protractor JSfiles/conf.js",
+    "pretest": "tsc",
+    "protractor":"./node_modules/protractor/built/cli.js" ,
+    "webdriver-update": "webdriver-manager update"
   },
   "repository": {
     "type": "git",
